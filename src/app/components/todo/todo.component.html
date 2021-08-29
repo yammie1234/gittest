@@ -1,0 +1,14 @@
+<!--<p>{{Title}}</p>
+<input [(ngModel)]="Title"/>
+<hr>
+<p>{{Age}}</p>
+<button (click)="onClick()">Test button</button>-->
+
+<div>
+  <input type="text" #todoInput>
+  <button (click)="onAddTodo(todoInput)">Add</button>
+</div>
+
+<div *ngFor="let item of todos">
+  <p> {{item.id}}.  <b>{{item.title}}</b> {{item.status}}</p>
+</div>
